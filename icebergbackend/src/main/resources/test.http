@@ -1,0 +1,29 @@
+// Obtener todos los usuarios
+GET http://localhost:8080/api/usuarios
+
+// Obtener usuario por ID
+GET http://localhost:8080/api/usuarios/1
+
+// Crear un usuario
+POST http://localhost:8080/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6...
+
+{
+    "nombre": "Marc",
+    "correo": "m.gcampobadal@gmail.com",
+    "contraseña": "Fefadivise11"
+}
+
+// Actualizar usuario (ID=1)
+PUT http://localhost:8080/api/usuarios/1
+Content-Type: application/json
+
+{
+    "nombre": "Marc",
+    "correo": "m.gcampobadal@gmail.com",
+    "contraseña": "Fefadivise11"
+}
+
+// Eliminar usuario (ID=1)
+DELETE http://localhost:8080/api/usuarios/1

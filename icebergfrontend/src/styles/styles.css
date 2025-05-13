@@ -1,0 +1,82 @@
+/* styles.css */
+
+:root {
+    --color-nieve: #f9fafb;
+    --color-hielo: #e0f2fe;
+    --color-primario: #a2c7d6;
+    --color-error: #ef4444;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-nieve);
+    color: #333;
+}
+
+h1,
+h2 {
+    margin: 0 0 1rem;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.error {
+    color: var(--color-error);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.producto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
